@@ -47,7 +47,7 @@ const products = [
     title: 'Aventure dans la Forêt',
     description: genericDescription('Aventure dans la Forêt'),
     price: sharedPackInfo.prixFixe,
-    video: 'https://www.youtube.com/embed/TWqgkazhCdw',
+    video: 'https://youtu.be/TWqgkazhCdw',
     images: [
       'images/products/2025/Coloringwatermark.png',
       'images/products/2025/test.png',
