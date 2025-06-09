@@ -20,12 +20,19 @@ const homepagePacks = [
   }
 ];
 
+const genericDescription = (title) =>
+  Découvrez ${title}, un pack de coloriages conçu pour les enfants de 3 à 6 ans.
+Il contient 10 illustrations originales et amusantes, parfaites pour stimuler la créativité et l’imagination.
+Chaque dessin est prêt à être imprimé et colorié, idéal pour des moments calmes et joyeux à la maison.
+
+Téléchargez instantanément ce pack après votre achat et laissez la magie des couleurs illuminer la journée de votre enfant !
+
 // Tous les produits pour les pages individuelles
 const products = [
   {
     id: 'coloring1',
     title: 'Le Super Coloriage Magique',
-    description: 'Un coloriage unique avec 20 pages d’animaux à colorier. Parfait pour les 3-6 ans.',
+    description: genericDescription('Le Super Coloriage Magique') ,
     price: sharedPackInfo.prixFixe,
     video: 'https://www.youtube.com/embed/TWqgkazhCdw',
     images: [
@@ -37,7 +44,7 @@ const products = [
   {
     id: 'coloring2',
     title: 'Aventure dans la Forêt',
-    description: 'Coloriage avec 15 pages sur le thème de la forêt magique.',
+    description: genericDescription('Aventure dans la Forêt'),
     price: sharedPackInfo.prixFixe,
     video: 'https://www.youtube.com/embed/TWqgkazhCdw',
     images: [
