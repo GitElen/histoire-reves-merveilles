@@ -22,7 +22,7 @@ if (!product) {
       </section>
       <section class="details">
         <h1 class="details-title">${product.title}</h1>
-        <pre class="details-desc">${product.description}</pre>
+        <p class="details-desc">${product.description}</p>
         <p class="details-price">Prix : ${product.price}</p>
         <button class="buy-button">Acheter maintenant</button>
         <div class="video-container">
