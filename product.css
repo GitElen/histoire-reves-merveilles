@@ -4,9 +4,6 @@ body {
   margin: 20px auto;
   padding: 0 10px;
 }
-pre {
-  font-family: Arial, sans-serif;
-}
 .product {
   display: flex;
   flex-wrap: wrap;
