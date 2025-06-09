@@ -1,7 +1,7 @@
 const packsData = [
-  { id: 1, img: "https://via.placeholder.com/300x200.png?text=Coloriage+1", lien: "LIEN_VERS_PAIEMENT_1" },
-  { id: 2, img: "https://via.placeholder.com/300x200.png?text=Coloriage+2", lien: "LIEN_VERS_PAIEMENT_2" },
-  { id: 3, img: "https://via.placeholder.com/300x200.png?text=Coloriage+3", lien: "LIEN_VERS_PAIEMENT_3" },
+  { id: 1, img: "images/Bannière.png", lien: "LIEN_VERS_PAIEMENT_1" },
+  { id: 2, img: "images/Bannière.png", lien: "LIEN_VERS_PAIEMENT_2" },
+  { id: 3, img: "images/test.png", lien: "LIEN_VERS_PAIEMENT_3" },
   // plus tard tu ajoutes juste des objets {id, img, lien}
 ];
 
