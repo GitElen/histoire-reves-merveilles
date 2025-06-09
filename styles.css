@@ -38,6 +38,7 @@
     border: 2px solid #ccc;
     border-radius: 8px;
     display: block;
+    height: 250px;
   }
   .download-button {
     display: inline-block;
