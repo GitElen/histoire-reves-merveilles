@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Packs Coloriages</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: #f9f9f9;
+  }
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .pack {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .pack img {
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+  .pack-title {
+    font-size: 1.2em;
+    margin: 10px 0 6px 0;
+    color: #222;
+  }
+  .pack-desc {
+    flex-grow: 1;
+    font-size: 0.95em;
+    color: #555;
+  }
+  .pack-price {
+    font-weight: bold;
+    margin: 12px 0;
+    color: #0a7bdb;
+    font-size: 1.1em;
+  }
+  .pack-button {
+    text-align: center;
+  }
+  .pack-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #0a7bdb;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+  }
+  .pack-button a:hover {
+    background: #065a9f;
+  }
+  @media(max-width: 500px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+</head>
+<body>
+
+<h1>Packs de coloriages</h1>
+
+<div class="grid">
+
+  <div class="pack">
+    <img src="https://via.placeholder.com/300x200.png?text=Coloriage+1" alt="Pack coloriages 1" />
+    <div class="pack-title">Pack de 10 coloriages à imprimer</div>
+    <div class="pack-desc">Téléchargez ce pack de coloriages et offrez à vos enfants un moment créatif et ludique !</div>
+    <div class="pack-price">Prix : 1,90 €</div>
+    <div class="pack-button"><a href="LIEN_VERS_PAIEMENT_1" target="_blank" rel="noopener">Acheter ce pack</a></div>
+  </div>
+
+  <div class="pack">
+    <img src="https://via.placeholder.com/300x200.png?text=Coloriage+2" alt="Pack coloriages 2" />
+    <div class="pack-title">Pack de 10 coloriages à imprimer</div>
+    <div class="pack-desc">Téléchargez ce pack de coloriages et offrez à vos enfants un moment créatif et ludique !</div>
+    <div class="pack-price">Prix : 1,90 €</div>
+    <div class="pack-button"><a href="LIEN_VERS_PAIEMENT_2" target="_blank" rel="noopener">Acheter ce pack</a></div>
+  </div>
+
+  <div class="pack">
+    <img src="https://via.placeholder.com/300x200.png?text=Coloriage+3" alt="Pack coloriages 3" />
+    <div class="pack-title">Pack de 10 coloriages à imprimer</div>
+    <div class="pack-desc">Téléchargez ce pack de coloriages et offrez à vos enfants un moment créatif et ludique !</div>
+    <div class="pack-price">Prix : 1,90 €</div>
+    <div class="pack-button"><a href="LIEN_VERS_PAIEMENT_3" target="_blank" rel="noopener">Acheter ce pack</a></div>
+  </div>
+
+</div>
+
+</body>
+</html>
