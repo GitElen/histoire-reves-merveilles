@@ -3,6 +3,7 @@
     padding: 20px;
     background: #f9f9f9;
     overflow: hidden;
+    min-height: 100vh;
   }
   h1 {
     text-align: center;
