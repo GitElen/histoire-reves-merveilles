@@ -1,0 +1,90 @@
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: #f9f9f9;
+  }
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 960px;
+    margin: 0 auto 30px;
+  }
+  .pack {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .pack img {
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+  .pack-title {
+    font-size: 1.2em;
+    margin: 10px 0 6px 0;
+    color: #222;
+  }
+  .pack-desc {
+    flex-grow: 1;
+    font-size: 0.95em;
+    color: #555;
+  }
+  .pack-price {
+    font-weight: bold;
+    margin: 12px 0;
+    color: #0a7bdb;
+    font-size: 1.1em;
+  }
+  .pack-button {
+    text-align: center;
+  }
+  .pack-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #0a7bdb;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+  }
+  .pack-button a:hover {
+    background: #065a9f;
+  }
+  @media(max-width: 500px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  /* Pagination style */
+  .pagination {
+    text-align: center;
+    margin-top: 20px;
+  }
+ .pagination button {
+    background: #0a7bdb;
+    border: none;
+    color: white;
+    padding: 8px 14px;
+    margin: 0 4px;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .pagination button:hover:not(:disabled) {
+    background: #065a9f;
+  }
+  .pagination button:disabled {
+    background: #065a9f; /* bleu plus foncé */
+    cursor: not-allowed;
+  }
