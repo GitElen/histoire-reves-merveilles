@@ -21,9 +21,9 @@ const homepagePacks = [
 ];
 
 const genericDescription = (title) => `
-Découvrez ${title}, un pack de coloriages conçu pour les enfants de 3 à 6 ans.
-Il contient 10 illustrations originales et amusantes, parfaites pour stimuler la créativité et l’imagination.
-Chaque dessin est prêt à être imprimé et colorié, idéal pour des moments calmes et joyeux à la maison.
+Découvrez ${title}, un pack de coloriages conçu pour les enfants de 3 à 6 ans.<br>
+Il contient 10 illustrations originales et amusantes, parfaites pour stimuler la créativité et l’imagination.<br>
+Chaque dessin est prêt à être imprimé et colorié, idéal pour des moments calmes et joyeux à la maison.<br>
 
 Téléchargez instantanément ce pack après votre achat et laissez la magie des couleurs illuminer la journée de votre enfant !`;
 
