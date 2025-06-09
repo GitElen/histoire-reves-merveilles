@@ -4,11 +4,11 @@
 const homepagePacks = [
   {
     id: 'coloring1',
-    img: 'images/Bannière.png'
+    img: 'images/colorings/2025/Bannière.png'
   },
   {
     id: 'coloring2',
-    img: 'images/Bannière.png'
+    img: 'images/colorings/2025/Bannière.png'
   }
 ];
 
@@ -21,9 +21,9 @@ const products = [
     price: '4,99 €',
     video: 'https://www.youtube.com/embed/ID_DE_TA_VIDEO',
     images: [
-      'images/products/coloring1-cover.jpg',
-      'images/products/coloring1-page2.jpg',
-      'images/products/coloring1-page3.jpg',
+      'images/products/2025/Bannière.png',
+      'images/products/2025/test.png',
+      'images/products/2025/test.png',
     ]
   },
   {
@@ -33,9 +33,9 @@ const products = [
     price: '3,99 €',
     video: 'https://www.youtube.com/embed/ID_VIDEO_COLORING2',
     images: [
-      'images/products/coloring2-cover.jpg',
-      'images/products/coloring2-page2.jpg',
-      'images/products/coloring2-page3.jpg',
+      'images/products/2025/Bannière.png',
+      'images/products/2025/test.png',
+      'images/products/2025/test.png',
     ]
   }
 ];
