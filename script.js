@@ -1,28 +1,21 @@
-const packsData = [
-  { id: 1, img: "images/Bannière.png", lien: "product.html?id=coloring1" },
-  { id: 2, img: "images/Bannière.png", lien: "product.html" },
-  { id: 3, img: "images/test.png", lien: "LIEN_VERS_PAIEMENT_3" },
- // { id: 4, img: "images/test.png", lien: "LIEN_VERS_PAIEMENT_4" },
-  //{ id: 5, img: "images/test.png", lien: "LIEN_VERS_PAIEMENT_5" },
-  // plus tard tu ajoutes juste des objets {id, img, lien}
-];
+// script.js
 
-const titreFixe = "Pack de 10 coloriages à imprimer";
-const descriptionFixe = "Téléchargez ce pack de coloriages et offrez à vos enfants un moment créatif et ludique !";
-const prixFixe = "1,90 €";
+import { homepagePacks, sharedPackInfo, constants } from './data.js';
 
-const packsPerPage = 3;
+const { packsPerPage } = constants;
+const { titreFixe, descriptionFixe, prixFixe } = sharedPackInfo;
+
+const totalPages = Math.ceil(homepagePacks.length / packsPerPage);
 let currentPage = 1;
-const totalPages = Math.ceil(packsData.length / packsPerPage);
 
 const grid = document.getElementById("grid");
 const pagination = document.getElementById("pagination");
 
 function renderGrid() {
   grid.innerHTML = "";
-  const start = (currentPage -1)*packsPerPage;
+  const start = (currentPage - 1) * packsPerPage;
   const end = start + packsPerPage;
-  const currentPacks = packsData.slice(start, end);
+  const currentPacks = homepagePacks.slice(start, end);
 
   currentPacks.forEach(pack => {
     const div = document.createElement("div");
@@ -32,7 +25,7 @@ function renderGrid() {
       <div class="pack-title">${titreFixe}</div>
       <div class="pack-desc">${descriptionFixe}</div>
       <div class="pack-price">Prix : ${prixFixe}</div>
-      <div class="pack-button"><a href="${pack.lien}" target="_blank" rel="noopener">Acheter ce pack</a></div>
+      <div class="pack-button"><a href="product.html?id=${pack.id}" target="_blank" rel="noopener">Acheter ce pack</a></div>
     `;
     grid.appendChild(div);
   });
@@ -41,23 +34,20 @@ function renderGrid() {
 function renderPagination() {
   pagination.innerHTML = "";
 
-  // Précédent
   const prevBtn = document.createElement("button");
   prevBtn.textContent = "Précédent";
   prevBtn.disabled = currentPage === 1;
   prevBtn.addEventListener("click", () => goToPage(currentPage - 1));
   pagination.appendChild(prevBtn);
 
-  // Pages numérotées
-  for(let i=1; i<= totalPages; i++) {
+  for (let i = 1; i <= totalPages; i++) {
     const btn = document.createElement("button");
     btn.textContent = i;
-    if(i === currentPage) btn.classList.add("active");
+    if (i === currentPage) btn.classList.add("active");
     btn.addEventListener("click", () => goToPage(i));
     pagination.appendChild(btn);
   }
 
-  // Suivant
   const nextBtn = document.createElement("button");
   nextBtn.textContent = "Suivant";
   nextBtn.disabled = currentPage === totalPages;
@@ -66,7 +56,7 @@ function renderPagination() {
 }
 
 function goToPage(page) {
-  if(page < 1 || page > totalPages) return;
+  if (page < 1 || page > totalPages) return;
   currentPage = page;
   renderGrid();
   renderPagination();
