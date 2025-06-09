@@ -5,7 +5,7 @@ const sharedPackInfo = {
   titreFixe: "Pack de 10 coloriages à imprimer",
   descriptionFixe: "Téléchargez ce pack de coloriages et offrez à vos enfants un moment créatif et ludique !",
   prixFixe: "1,90 €",
-  button: "Visualiser le pack"
+  buttonFixe: "Visualiser le pack"
 };
 
 // Packs visibles sur la page d’accueil
