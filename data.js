@@ -30,7 +30,7 @@ const products = [
     images: [
       'images/products/2025/4.png',
       'images/products/2025/test.png',
-      'images/products/2025/7.png',
+      'images/products/2025/Coloringwatermark.png',
     ]
   },
   {
@@ -40,7 +40,7 @@ const products = [
     price: sharedPackInfo.prixFixe,
     video: 'https://youtu.be/TWqgkazhCdw',
     images: [
-      'images/products/2025/7.png',
+      'images/products/2025/ColoringWatermark.png',
       'images/products/2025/test.png',
       'images/products/2025/4.png',
     ]
