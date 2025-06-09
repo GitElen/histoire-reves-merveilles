@@ -3,7 +3,7 @@
 import { homepagePacks, sharedPackInfo, constants } from './data.js';
 
 const { packsPerPage } = constants;
-const { titreFixe, descriptionFixe, prixFixe } = sharedPackInfo;
+const { titreFixe, descriptionFixe, prixFixe, button } = sharedPackInfo;
 
 const totalPages = Math.ceil(homepagePacks.length / packsPerPage);
 let currentPage = 1;
@@ -25,7 +25,7 @@ function renderGrid() {
       <div class="pack-title">${titreFixe}</div>
       <div class="pack-desc">${descriptionFixe}</div>
       <div class="pack-price">Prix : ${prixFixe}</div>
-      <div class="pack-button"><a href="product.html?id=${pack.id}" target="_blank" rel="noopener">Acheter ce pack</a></div>
+      <div class="pack-button"><a href="product.html?id=${pack.id}" target="_blank" rel="noopener">${button}</a></div>
     `;
     grid.appendChild(div);
   });
