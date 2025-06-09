@@ -9,87 +9,10 @@
 <body>
 
 <h1>Packs de coloriages</h1>
+<div class="grid"></div>
+<div class="pagination"></div>
 
-<div class="grid" id="packs-container"></div>
-
-<div class="pagination" id="pagination-container"></div>
-
-<script>
-  const DEFAULT_DESC = "Téléchargez ce pack de coloriages et offrez à vos enfants un moment créatif et ludique !";
-  const DEFAULT_PRICE = "1,90 €";
-
-  // Liste des packs (ajoute/enlève/modifie ici)
-  const packs = [
-    { img: "https://via.placeholder.com/300x200.png?text=Coloriage+1", title: "Pack 1", link: "#paiement1" },
-    { img: "https://via.placeholder.com/300x200.png?text=Coloriage+2", title: "Pack 2", link: "#paiement2" },
-    { img: "https://via.placeholder.com/300x200.png?text=Coloriage+3", title: "Pack 3", link: "#paiement3" },
-    { img: "https://via.placeholder.com/300x200.png?text=Coloriage+4", title: "Pack 4", link: "#paiement4" },
-    { img: "https://via.placeholder.com/300x200.png?text=Coloriage+5", title: "Pack 5", link: "#paiement5" },
-    { img: "https://via.placeholder.com/300x200.png?text=Coloriage+6", title: "Pack 6", link: "#paiement6" },
-    { img: "https://via.placeholder.com/300x200.png?text=Coloriage+7", title: "Pack 7", link: "#paiement7" },
-    { img: "https://via.placeholder.com/300x200.png?text=Coloriage+8", title: "Pack 8", link: "#paiement8" },
-    { img: "https://via.placeholder.com/300x200.png?text=Coloriage+9", title: "Pack 9", link: "#paiement9" },
-    { img: "https://via.placeholder.com/300x200.png?text=Coloriage+10", title: "Pack 10", link: "#paiement10" },
-    { img: "https://via.placeholder.com/300x200.png?text=Coloriage+8", title: "Pack 11", link: "#paiement8" },
-    { img: "https://via.placeholder.com/300x200.png?text=Coloriage+9", title: "Pack 12", link: "#paiement9" },
-    { img: "https://via.placeholder.com/300x200.png?text=Coloriage+10", title: "Pack 13", link: "#paiement10" },
-    // ajoute autant que tu veux...
-  ];
-
-  const packsPerPage = 6; // modifier ici le nombre de packs par page
-  let currentPage = 1;
-  const totalPages = Math.ceil(packs.length / packsPerPage);
-
-  function packTemplate({img, title, desc = DEFAULT_DESC, price = DEFAULT_PRICE, link}) {
-    return `
-      <div class="pack">
-        <img src="${img}" alt="${title}" />
-        <div class="pack-title">${title}</div>
-        <div class="pack-desc">${desc}</div>
-        <div class="pack-price">Prix : ${price}</div>
-        <div class="pack-button">
-          <a href="${link}" target="_blank" rel="noopener">Acheter ce pack</a>
-        </div>
-      </div>
-    `;
-  }
-
-  function renderPage(page) {
-    const start = (page - 1) * packsPerPage;
-    const end = start + packsPerPage;
-    const pagePacks = packs.slice(start, end);
-
-    document.getElementById('packs-container').innerHTML = pagePacks.map(packTemplate).join('');
-    renderPagination();
-  }
-
-  function renderPagination() {
-    const paginationContainer = document.getElementById('pagination-container');
-    let html = '';
-
-    // Bouton Précédent
-    html += `<button ${currentPage === 1 ? 'disabled' : ''} onclick="goToPage(${currentPage - 1})">Précédent</button>`;
-
-    for(let i = 1; i <= totalPages; i++) {
-      // Le bouton de la page active est désactivé et bien coloré (CSS)
-      html += `<button ${i === currentPage ? 'disabled' : ''} onclick="goToPage(${i})">${i}</button>`;
-    }
-
-    // Bouton Suivant
-    html += `<button ${currentPage === totalPages ? 'disabled' : ''} onclick="goToPage(${currentPage + 1})">Suivant</button>`;
-
-    paginationContainer.innerHTML = html;
-  }
-  
-  function goToPage(page) {
-    if(page < 1 || page > totalPages) return;
-    currentPage = page;
-    renderPage(currentPage);
-  }
-
-  // Initial render
-  renderPage(currentPage);
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
