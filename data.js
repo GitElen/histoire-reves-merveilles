@@ -26,7 +26,7 @@ const products = [
     title: 'Le Super Coloriage Magique',
     description: 'Un coloriage unique avec 20 pages d’animaux à colorier. Parfait pour les 3-6 ans.',
     price: sharedPackInfo.prixFixe,
-    video: 'https://www.youtube.com/embed/ID_DE_TA_VIDEO',
+    video: 'https://www.youtube.com/embed/TWqgkazhCdw',
     images: [
       'images/products/2025/4.png',
       'images/products/2025/test.png',
@@ -38,7 +38,7 @@ const products = [
     title: 'Aventure dans la Forêt',
     description: 'Coloriage avec 15 pages sur le thème de la forêt magique.',
     price: sharedPackInfo.prixFixe,
-    video: 'https://www.youtube.com/embed/ID_VIDEO_COLORING2',
+    video: 'https://youtu.be/TWqgkazhCdw',
     images: [
       'images/products/2025/7.png',
       'images/products/2025/test.png',
