@@ -38,9 +38,9 @@ const products = [
     title: 'Aventure dans la Forêt',
     description: 'Coloriage avec 15 pages sur le thème de la forêt magique.',
     price: sharedPackInfo.prixFixe,
-    video: 'https://youtu.be/TWqgkazhCdw',
+    video: 'https://www.youtube.com/embed/TWqgkazhCdw',
     images: [
-      'images/products/2025/ColoringWatermark.png',
+      'images/products/2025/Coloringwatermark.png',
       'images/products/2025/test.png',
       'images/products/2025/4.png',
     ]
