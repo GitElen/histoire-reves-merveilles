@@ -1,39 +1,8 @@
-// Tableau des produits
-const products = [
-  {
-    id: 'coloring1',
-    title: 'Le Super Coloriage Magique',
-    description: 'Un coloriage unique avec 20 pages d’animaux à colorier. Parfait pour les 3-6 ans.',
-    price: '4,99 €',
-    video: 'https://www.youtube.com/embed/ID_DE_TA_VIDEO',
-    images: [
-      'images/products/coloring1-cover.jpg',
-      'images/products/coloring1-page2.jpg',
-      'images/products/coloring1-page3.jpg',
-    ]
-  },
-  {
-    id: 'coloring2',
-    title: 'Aventure dans la Forêt',
-    description: 'Coloriage avec 15 pages sur le thème de la forêt magique.',
-    price: '3,99 €',
-    video: 'https://www.youtube.com/embed/ID_VIDEO_COLORING2',
-    images: [
-      'images/products/coloring2-cover.jpg',
-      'images/products/coloring2-page2.jpg',
-      'images/products/coloring2-page3.jpg',
-    ]
-  }
-  // Ajoute ici d'autres produits...
-];
+// product.js
 
-// Fonction utilitaire pour récupérer le paramètre `id` dans l'URL
-function getParam(param) {
-  const urlParams = new URLSearchParams(window.location.search);
-  return urlParams.get(param);
-}
+import { products, constants } from './data.js';
 
-const productId = getParam('id') || 'coloring1'; // Par défaut 'coloring1'
+const productId = new URLSearchParams(window.location.search).get('id') || constants.defaultProductId;
 const product = products.find(p => p.id === productId);
 
 const container = document.getElementById('product-container');
@@ -63,7 +32,7 @@ if (!product) {
     </div>
   `;
 
-  // Gestion clic sur miniatures
+  // Galerie dynamique
   const mainImg = document.getElementById('main-img');
   const thumbs = container.querySelectorAll('.thumb');
   thumbs.forEach(thumb => {
