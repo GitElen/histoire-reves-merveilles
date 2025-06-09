@@ -61,17 +61,17 @@
   .pack-button a:hover {
     background: #065a9f;
   }
-  .question{
+  .question {
     text-align: center; 
     margin-top: 60px;
     padding-top: 30px;
     border-top: 1px solid #ddd;
   }
-  .youtube{
+  .youtube {
     text-align: center;
     margin-top: 40px;
   }
-  .youtubeLink{
+  .youtubeLink {
     font-weight: bold;
     color: #0a7bdb;
     text-decoration: none;
