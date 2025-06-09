@@ -121,6 +121,12 @@
     background: #065a9f;
   }
   .pagination button:disabled {
-    background: #065a9f; /* bleu plus foncé */
+    background: #065a9f; /* dark blue */
     cursor: not-allowed;
+  }
+  .pagination button.active {
+    background: #065a9f; /* dark blue */
+    color: #0a7bdb;
+    cursor: default;
+    font-weight: 700;
   }
