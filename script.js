@@ -1,6 +1,6 @@
 const packsData = [
-  { id: 1, img: "images/Bannière.png", lien: "coloring1" },
-  { id: 2, img: "images/Bannière.png", lien: "LIEN_VERS_PAIEMENT_2" },
+  { id: 1, img: "images/Bannière.png", lien: product.html?id="coloring1" },
+  { id: 2, img: "images/Bannière.png", lien: product.html },
   { id: 3, img: "images/test.png", lien: "LIEN_VERS_PAIEMENT_3" },
  // { id: 4, img: "images/test.png", lien: "LIEN_VERS_PAIEMENT_4" },
   //{ id: 5, img: "images/test.png", lien: "LIEN_VERS_PAIEMENT_5" },
