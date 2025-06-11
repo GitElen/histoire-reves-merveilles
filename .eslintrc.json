@@ -1,0 +1,24 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    "prettier/prettier": ["warn", {
+      "printWidth": 100,
+      "tabWidth": 2,
+      "semi": true,
+      "singleQuote": true,
+      "trailingComma": "none",
+      "bracketSpacing": true,
+      "arrowParens": "avoid"
+    }],
+    "no-unused-vars": "warn",
+    "no-console": "off"
+  }
+}
