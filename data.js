@@ -8,6 +8,15 @@ const sharedPackInfo = {
   buttonFixe: "Visualiser le pack"
 };
 
+// Fonction utilitaire pour générer 3 images à partir d’un index de départ
+const generateImages = (startIndex) => {
+  return [
+    `images/products/2025/${startIndex}.png`,
+    `images/products/2025/${startIndex + 1}.png`,
+    `images/products/2025/${startIndex + 2}.png`,
+  ];
+};
+
 // Packs visibles sur la page d’accueil
 const homepagePacks = [
   {
@@ -36,11 +45,7 @@ const products = [
     description: genericDescription('Le Super Coloriage Magique') ,
     price: sharedPackInfo.prixFixe,
     video: 'https://www.youtube.com/embed/TWqgkazhCdw',
-    images: [
-      'images/products/2025/4.png',
-      'images/products/2025/test.png',
-      'images/products/2025/Coloringwatermark.png',
-    ]
+    images: generateImages(1)
   },
   {
     id: 'coloring2',
@@ -48,11 +53,7 @@ const products = [
     description: genericDescription('Aventure dans la Forêt'),
     price: sharedPackInfo.prixFixe,
     video: 'https://www.youtube.com/embed/TWqgkazhCdw',
-    images: [
-      'images/products/2025/Coloringwatermark.png',
-      'images/products/2025/test.png',
-      'images/products/2025/4.png',
-    ]
+    images: generateImages(1)
   }
 ];
 
