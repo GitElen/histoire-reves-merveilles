@@ -17,18 +17,6 @@ const generateImages = (startIndex) => {
   ];
 };
 
-// Packs visibles sur la page d’accueil
-const homepagePacks = [
-  {
-    id: 'coloring1',
-    img: 'images/colorings/2025/4.png'
-  },
-  {
-    id: 'coloring2',
-    img: 'images/colorings/2025/7.png'
-  }
-];
-
 const genericDescription = (title) => `
 Découvrez ${title}, un pack de coloriages conçu pour les enfants de 3 à 6 ans.<br>
 Il contient 10 illustrations originales et amusantes, parfaites pour stimuler la créativité et l’imagination.<br>
@@ -56,6 +44,23 @@ const products = [
     images: generateImages(1)
   }
 ];
+
+const generateHomepageImages = (count) => {
+  const result = [];
+  for (let i = 0; i < count; i++) {
+    const imageNumber = (i * 10) + 1; // => 1, 11, 21, 31...
+    result.push({
+      id: `coloring${i + 1}`,
+      img: `images/products/2025/${imageNumber}.png`
+    });
+  }
+  return result;
+};
+
+
+// Packs visibles sur la page d’accueil
+const homepagePacks = generateHomepageImages(products.length);
+
 
 // Constantes techniques
 const constants = {
