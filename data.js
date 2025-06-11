@@ -1,6 +1,6 @@
 // data.js
+import productsData from './products-data.js';
 
-// Infos partagées par tous les packs (page accueil)
 const sharedPackInfo = {
   titreFixe: "Pack de 10 coloriages à imprimer",
   descriptionFixe: "Téléchargez ce pack de coloriages et offrez à vos enfants un moment créatif et ludique !",
@@ -8,47 +8,12 @@ const sharedPackInfo = {
   buttonFixe: "Visualiser le pack"
 };
 
-// Fonction utilitaire pour générer 3 images à partir d’un index de départ
-const generateImages = (startIndex) => {
-  return [
-    `images/products/2025/${startIndex}.png`,
-    `images/products/2025/${startIndex + 1}.png`,
-    `images/products/2025/${startIndex + 2}.png`,
-  ];
-};
-
-const genericDescription = (title) => `
-Découvrez ${title}, un pack de coloriages conçu pour les enfants de 3 à 6 ans.<br>
-Il contient 10 illustrations originales et amusantes, parfaites pour stimuler la créativité et l’imagination.<br>
-Chaque dessin est prêt à être imprimé et colorié, idéal pour des moments calmes et joyeux à la maison.<br>
-
-Téléchargez instantanément ce pack après votre achat et laissez la magie des couleurs illuminer la journée de votre enfant !`;
-
-
-// Tous les produits pour les pages individuelles
-const products = [
-  {
-    id: 'coloring1',
-    title: 'Lina et le Balai Capricieux',
-    description: genericDescription('Lina et le Balai Capricieux') ,
-    price: sharedPackInfo.prixFixe,
-    video: 'https://www.youtube.com/embed/TWqgkazhCdw',
-    images: generateImages(1)
-  },
-  /**{
-    id: 'coloring2',
-    title: 'Aventure dans la Forêt',
-    description: genericDescription('Aventure dans la Forêt'),
-    price: sharedPackInfo.prixFixe,
-    video: 'https://www.youtube.com/embed/TWqgkazhCdw',
-    images: generateImages(1)
-  }**/
-];
+const products = productsData.filter(p => p.active);
 
 const generateHomepageImages = (count) => {
   const result = [];
   for (let i = 0; i < count; i++) {
-    const imageNumber = (i * 10) + 1; // => 1, 11, 21, 31...
+    const imageNumber = (i * 10) + 1;
     result.push({
       id: `coloring${i + 1}`,
       img: `images/products/2025/${imageNumber}.png`
@@ -57,12 +22,8 @@ const generateHomepageImages = (count) => {
   return result;
 };
 
-
-// Packs visibles sur la page d’accueil
 const homepagePacks = generateHomepageImages(products.length);
 
-
-// Constantes techniques
 const constants = {
   packsPerPage: 3,
   defaultProductId: 'coloring1'
