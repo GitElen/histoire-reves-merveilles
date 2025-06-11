@@ -41,8 +41,8 @@ Téléchargez instantanément ce pack après votre achat et laissez la magie des
 const products = [
   {
     id: 'coloring1',
-    title: 'Le Super Coloriage Magique',
-    description: genericDescription('Le Super Coloriage Magique') ,
+    title: 'Lina et le Balai Capricieux',
+    description: genericDescription('Lina et le Balai Capricieux') ,
     price: sharedPackInfo.prixFixe,
     video: 'https://www.youtube.com/embed/TWqgkazhCdw',
     images: generateImages(1)
