@@ -35,14 +35,14 @@ const products = [
     video: 'https://www.youtube.com/embed/TWqgkazhCdw',
     images: generateImages(1)
   },
-  {
+  /**{
     id: 'coloring2',
     title: 'Aventure dans la Forêt',
     description: genericDescription('Aventure dans la Forêt'),
     price: sharedPackInfo.prixFixe,
     video: 'https://www.youtube.com/embed/TWqgkazhCdw',
     images: generateImages(1)
-  }
+  }**/
 ];
 
 const generateHomepageImages = (count) => {
