@@ -13,7 +13,7 @@ const products = productsData.filter(p => p.active);
 const generateHomepageImages = (count) => {
   const result = [];
   for (let i = 0; i < count; i++) {
-    const imageNumber = (i * 10) + 1;
+    const imageNumber = (i * 3) + 1; // 1, 4, 7, 10, ...
     result.push({
       id: `coloring${i + 1}`,
       img: `images/products/2025/${imageNumber}.png`
