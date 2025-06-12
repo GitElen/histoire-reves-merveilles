@@ -24,11 +24,47 @@ const products = [
   },
   {
     id: 'coloring2',
-    title: 'Aventure dans la Forêt',
-    description: genericDescription('Aventure dans la Forêt'),
+    title: 'Gobelet et la Paille Bavarde',
+    description: genericDescription('Gobelet et la Paille Bavarde'),
     price: prixFixe,
     video: 'https://www.youtube.com/embed/TWqgkazhCdw',
     images: generateImages(4),
+    active: false
+  },
+  {
+    id: 'coloring3',
+    title: 'Isaac et le Mur Qui Chuchotait',
+    description: genericDescription('Isaac et le Mur Qui Chuchotait'),
+    price: prixFixe,
+    video: 'https://www.youtube.com/embed/TWqgkazhCdw',
+    images: generateImages(7),
+    active: false
+  },
+  {
+    id: 'coloring4',
+    title: 'Le Livre Qui Riait Trop Fort',
+    description: genericDescription('Le Livre Qui Riait Trop Fort'),
+    price: prixFixe,
+    video: 'https://www.youtube.com/embed/TWqgkazhCdw',
+    images: generateImages(10),
+    active: false
+  },
+  {
+    id: 'coloring5',
+    title: 'Zoé et le Banc des Secrets',
+    description: genericDescription('Zoé et le Banc des Secrets'),
+    price: prixFixe,
+    video: 'https://www.youtube.com/embed/TWqgkazhCdw',
+    images: generateImages(13),
+    active: false
+  },
+  {
+    id: 'coloring6',
+    title: 'La Fleur Qui Ne Voulait Pas Faner',
+    description: genericDescription('La Fleur Qui Ne Voulait Pas Faner'),
+    price: prixFixe,
+    video: 'https://www.youtube.com/embed/TWqgkazhCdw',
+    images: generateImages(16),
     active: false
   }
   // Ajoute les autres packs ici
