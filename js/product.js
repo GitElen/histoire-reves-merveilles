@@ -28,9 +28,13 @@ if (!product) {
         <h1 class="details-title">${product.title}</h1>
         <p class="details-desc">${product.description}</p>
         <p class="details-price">Prix : ${product.price}</p>
-        <a href="https://buy.stripe.com/test_aFa5kF8419ae5t837bcMM01" target="_blank" class="buy-button">
+        <a href="https://buy.stripe.com/${product.link}" target="_blank" class="buy-button">
           Acheter maintenant
         </a>
+        <div class="payment-info">
+          <img src="https://stripe.com/img/v3/home/twitter.png" alt="Paiement sécurisé Stripe" />
+          <span>Paiement sécurisé via Stripe</span>
+        </div>
         <div class="video-container">
           <iframe src="${product.video}" title="Présentation ${product.title}" frameborder="0" allowfullscreen></iframe>
         </div>

@@ -20,6 +20,7 @@ const products = [
     price: prixFixe,
     video: 'https://www.youtube.com/embed/TWqgkazhCdw',
     images: generateImages(1),
+    link: 'test',
     active: true
   },
   {
@@ -29,6 +30,7 @@ const products = [
     price: prixFixe,
     video: 'https://www.youtube.com/embed/TWqgkazhCdw',
     images: generateImages(4),
+    link: '',
     active: false
   },
   {
@@ -38,6 +40,7 @@ const products = [
     price: prixFixe,
     video: 'https://www.youtube.com/embed/TWqgkazhCdw',
     images: generateImages(7),
+    link: '',
     active: false
   },
   {
@@ -47,6 +50,7 @@ const products = [
     price: prixFixe,
     video: 'https://www.youtube.com/embed/TWqgkazhCdw',
     images: generateImages(10),
+    link: '',
     active: false
   },
   {
@@ -56,6 +60,7 @@ const products = [
     price: prixFixe,
     video: 'https://www.youtube.com/embed/TWqgkazhCdw',
     images: generateImages(13),
+    link: '',
     active: false
   },
   {
@@ -65,6 +70,7 @@ const products = [
     price: prixFixe,
     video: 'https://www.youtube.com/embed/TWqgkazhCdw',
     images: generateImages(16),
+    link: '',
     active: false
   }
   // Ajoute les autres packs ici

@@ -60,7 +60,7 @@ body {
 .details-price {
   font-weight: bold;
   font-size: 1.3rem;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 .buy-button {
   background-color: #007bff;
@@ -71,9 +71,22 @@ body {
   border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.3s;
+  text-decoration: none;
 }
 .buy-button:hover {
   background-color: #0056b3;
+}
+.payment-info {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.payment-info img {
+  width: 24px;
+  height: auto;
 }
 .video-container {
   margin-top: 30px;
