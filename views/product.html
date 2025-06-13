@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Page produit coloriage</title>
+  <link rel="stylesheet" href="../css/product.css" />
+</head>
+<body>
+
+  <a href="../views/index.html" class="return-home">← Retour à l'accueil</a>
+  <div id="product-container" class="product-container">
+    <!-- Contenu dynamique injecté ici -->
+  </div>
+
+<script>
+  document.addEventListener("contextmenu", e => e.preventDefault());
+  document.addEventListener("dragstart", e => e.preventDefault());
+</script>  
+<script type="module" src="../js/data.js"></script>
+<script type="module" src="../js/product.js"></script>
+
+</body>
+</html>

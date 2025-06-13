@@ -1,0 +1,84 @@
+/* reset et base */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 40px 20px;
+  color: #333;
+  text-align: center;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px 20px 40px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+  position: relative;
+}
+
+.logo {
+  max-width: 150px;
+}
+
+h1 {
+  color: #222;
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.download-link {
+  display: inline-block;
+  background-color: #ff4c4c; /* rouge vif */
+  color: white;
+  font-weight: 600;
+  padding: 14px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  box-shadow: 0 6px 12px rgba(255,76,76,0.4);
+  transition: background-color 0.3s ease;
+  margin: 20px 0px 25px;
+}
+
+.download-link:hover {
+  background-color: #e04343;
+}
+
+.support {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.support a {
+  color: #007acc; /* bleu vif */
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.support a:hover {
+  text-decoration: underline;
+}
+
+.return-home {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 14px;
+  color: #007acc;
+  text-decoration: none;
+  font-weight: bold;
+  z-index: 10; /* pour qu'il passe au-dessus du reste si besoin */
+}
+
+.return-home:hover {
+  text-decoration: underline;
+}
