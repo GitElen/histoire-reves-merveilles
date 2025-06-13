@@ -20,7 +20,7 @@ const products = [
     price: prixFixe,
     video: 'https://www.youtube.com/embed/TWqgkazhCdw',
     images: generateImages(1),
-    link: 'test',
+    link: 'https://buy.stripe.com/8x25kE9WWdn02Y4bxP6Vq00',
     active: true
   },
   {
@@ -30,7 +30,7 @@ const products = [
     price: prixFixe,
     video: 'https://www.youtube.com/embed/TWqgkazhCdw',
     images: generateImages(4),
-    link: '',
+    link: 'https://buy.stripe.com/6oU5kE2uu3Mq8iogS96Vq01',
     active: false
   },
   {
@@ -40,7 +40,7 @@ const products = [
     price: prixFixe,
     video: 'https://www.youtube.com/embed/TWqgkazhCdw',
     images: generateImages(7),
-    link: '',
+    link: 'https://buy.stripe.com/6oU3cw8SS5Uy56c31j6Vq02',
     active: false
   },
   {

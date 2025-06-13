@@ -28,7 +28,7 @@ if (!product) {
         <h1 class="details-title">${product.title}</h1>
         <p class="details-desc">${product.description}</p>
         <p class="details-price">Prix : ${product.price}</p>
-        <a href="https://buy.stripe.com/${product.link}" target="_blank" class="buy-button">
+        <a href=${product.link} target="_blank" class="buy-button">
           Acheter maintenant
         </a>
         <div class="payment-info">

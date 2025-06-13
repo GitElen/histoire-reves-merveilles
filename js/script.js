@@ -25,7 +25,7 @@ function renderGrid() {
       <div class="pack-title">${titreFixe}</div>
       <div class="pack-desc">${descriptionFixe}</div>
       <div class="pack-price">Prix : ${prixFixe}</div>
-      <div class="pack-button"><a href="product.html?id=${pack.id}" target="_blank" rel="noopener">${buttonFixe}</a></div>
+      <div class="pack-button"><a href="views/product.html?id=${pack.id}" target="_blank" rel="noopener">${buttonFixe}</a></div>
     `;
     grid.appendChild(div);
   });
