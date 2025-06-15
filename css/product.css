@@ -1,18 +1,27 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Arial, sans-serif;
 }
-.product-container{
-   max-width: 1100px;
-  margin: 20px auto;
-  padding: 0 10px;
+.product-container {
+  background-color: #fffaf4;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 30px 20px;
 }
 .return-home {
-  color: #007acc;
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 8px 16px;
+  background-color: #ffe7c2;
+  color: #333;
+  font-weight: 600;
   text-decoration: none;
-  font-weight: bold;
+  border-radius: 20px;
+  border: 2px solid #ffc488;
+  transition: background-color 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .return-home:hover {
-  text-decoration: underline;
+  background-color: #ffd199;
 }
 .product {
   display: flex;
@@ -48,6 +57,7 @@ body {
 }
 .details {
   flex: 1 1 300px;
+  max-width: 800px;
 }
 .details-title {
   font-size: 1.8rem;
@@ -63,15 +73,15 @@ body {
   margin-bottom: 25px;
 }
 .buy-button {
-  background-color: #007bff;
+  display: inline-block;
+  padding: 10px 20px;
+  background: #0a7bdb;
   color: white;
-  border: none;
-  padding: 12px 25px;
-  font-size: 1.1rem;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.3s;
   text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+  cursor: pointer;
 }
 .buy-button:hover {
   background-color: #0056b3;
@@ -90,6 +100,7 @@ body {
 }
 .video-container {
   margin-top: 30px;
+  max-width: 600px;
 }
 iframe {
   width: 100%;
@@ -100,7 +111,8 @@ iframe {
   .product {
     flex-direction: column;
   }
-  .gallery, .details {
+  .gallery,
+  .details {
     max-width: 100%;
   }
 }
