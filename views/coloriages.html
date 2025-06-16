@@ -3,16 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Page produit coloriage</title>
+    <title>Packs Coloriages</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
-    <link rel="stylesheet" href="/css/product.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/css/includes.css" />
+    <link rel="stylesheet" href="/css/thankyou.css" />
+    <!-- Only for return button -->
   </head>
-  <body>
+  <body data-page="coloriages">
     <div id="header-container"></div>
-    <div id="product-container" class="product-container">
-      <!-- Contenu dynamique injecté ici -->
-    </div>
+    <a href="/index.html" class="return-home">← Retour à l'accueil</a>
+    <h1 class="main-title">Packs de coloriages</h1>
+    <p class="subtitle">
+      Des coloriages uniques, à télécharger immédiatement après paiement sécurisé.
+    </p>
+    <div class="grid" id="grid"></div>
+    <div class="pagination" id="pagination"></div>
     <div id="footer-container"></div>
 
     <script>
@@ -21,6 +27,6 @@
     </script>
     <script src="/js/includes.js"></script>
     <script type="module" src="/js/data.js"></script>
-    <script type="module" src="/js/product.js"></script>
+    <script type="module" src="/js/script.js"></script>
   </body>
 </html>

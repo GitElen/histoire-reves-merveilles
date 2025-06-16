@@ -1,6 +1,6 @@
 // product.js
 
-import { products, constants } from './data.js';
+import { products, constants } from '/js/data.js';
 
 const productId =
   new URLSearchParams(window.location.search).get('id') || constants.defaultProductId;
