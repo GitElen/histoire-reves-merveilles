@@ -1,5 +1,5 @@
 // data.js
-import productsData from '../data/products-data.js';
+import productsData from '/data/products-data.js';
 
 const sharedPackInfo = {
   titreFixe: 'Pack de 10 coloriages à imprimer',
@@ -17,7 +17,7 @@ const generateHomepageImages = count => {
     const imageNumber = i * 3 + 1; // 1, 4, 7, 10, ...
     result.push({
       id: `coloring${i + 1}`,
-      img: `images/products/2025/${imageNumber}.png`
+      img: `/images/products/2025/${imageNumber}.png`
     });
   }
   return result;

@@ -1,8 +1,10 @@
 // script.js
 
-import { homepagePacks, sharedPackInfo, constants } from './data.js';
+import { homepagePacks, sharedPackInfo, constants } from '/js/data.js';
 
-const { packsPerPage } = constants;
+const pageType = document.body.dataset.page;
+const packsPerPage = pageType === 'coloriages' ? 6 : constants.packsPerPage;
+
 const { titreFixe, descriptionFixe, prixFixe, buttonFixe } = sharedPackInfo;
 
 const totalPages = Math.ceil(homepagePacks.length / packsPerPage);
@@ -15,7 +17,8 @@ function renderGrid() {
   grid.innerHTML = '';
   const start = (currentPage - 1) * packsPerPage;
   const end = start + packsPerPage;
-  const currentPacks = homepagePacks.slice(start, end);
+  const reversedPacks = [...homepagePacks].reverse();
+  const currentPacks = reversedPacks.slice(start, end);
 
   currentPacks.forEach(pack => {
     const div = document.createElement('div');
@@ -25,7 +28,7 @@ function renderGrid() {
       <div class="pack-title">${titreFixe}</div>
       <div class="pack-desc">${descriptionFixe}</div>
       <div class="pack-price">Prix : ${prixFixe}</div>
-      <div class="pack-button"><a href="views/product.html?id=${pack.id}" target="_blank" rel="noopener">${buttonFixe}</a></div>
+      <div class="pack-button"><a href="/views/product.html?id=${pack.id}">${buttonFixe}</a></div>
     `;
     grid.appendChild(div);
   });
@@ -53,6 +56,14 @@ function renderPagination() {
   nextBtn.disabled = currentPage === totalPages;
   nextBtn.addEventListener('click', () => goToPage(currentPage + 1));
   pagination.appendChild(nextBtn);
+
+  if (pageType !== 'coloriages') {
+    const viewAllBtn = document.createElement('a');
+    viewAllBtn.href = '/views/coloriages.html';
+    viewAllBtn.textContent = 'Voir tous les coloriages';
+    viewAllBtn.className = 'view-all-button';
+    pagination.appendChild(viewAllBtn);
+  }
 }
 
 function goToPage(page) {

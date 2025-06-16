@@ -1,23 +1,25 @@
 /* reset et base */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f9f9f9;
+  background-color: #fffaf4;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   margin: 0;
-  padding: 40px 20px;
   color: #333;
+}
+.container {
+  border-radius: 12px;
+  padding: 30px 20px;
   text-align: center;
 }
-
-.container {
+.container-thankyou {
   max-width: 500px;
   margin: 0 auto;
-  background: white;
-  padding: 30px 20px 40px 20px;
+  background: #fff8e1;
+  padding: 40px 30px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   position: relative;
 }
-
 .logo {
   max-width: 150px;
 }
@@ -26,13 +28,6 @@ h1 {
   color: #222;
   font-size: 1.8rem;
   margin-bottom: 12px;
-}
-
-p {
-  font-size: 1rem;
-  line-height: 1.5;
-  margin-bottom: 20px;
-  color: #555;
 }
 
 .download-link {
@@ -44,7 +39,7 @@ p {
   border-radius: 30px;
   text-decoration: none;
   font-size: 1.2rem;
-  box-shadow: 0 6px 12px rgba(255,76,76,0.4);
+  box-shadow: 0 6px 12px rgba(255, 76, 76, 0.4);
   transition: background-color 0.3s ease;
   margin: 20px 0px 25px;
 }
@@ -56,6 +51,7 @@ p {
 .support {
   font-size: 0.9rem;
   color: #333;
+  margin-top: 30px;
 }
 
 .support a {
@@ -69,16 +65,18 @@ p {
 }
 
 .return-home {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  font-size: 14px;
-  color: #007acc;
+  display: inline-block;
+  margin: 20px 0px 0px 30px;
+  padding: 8px 16px;
+  background-color: #ffe7c2;
+  color: #333;
+  font-weight: 600;
   text-decoration: none;
-  font-weight: bold;
-  z-index: 10; /* pour qu'il passe au-dessus du reste si besoin */
+  border-radius: 20px;
+  border: 2px solid #ffc488;
+  transition: background-color 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
 .return-home:hover {
-  text-decoration: underline;
+  background-color: #ffd199;
 }

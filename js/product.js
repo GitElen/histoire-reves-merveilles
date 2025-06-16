@@ -1,6 +1,6 @@
 // product.js
 
-import { products, constants } from './data.js';
+import { products, constants } from '/js/data.js';
 
 const productId =
   new URLSearchParams(window.location.search).get('id') || constants.defaultProductId;
@@ -12,6 +12,7 @@ if (!product) {
   container.innerHTML = '<p>Produit non trouvé.</p>';
 } else {
   container.innerHTML = `
+    <a href="../index.html" class="return-home">← Retour à l'accueil</a>
     <div class="product">
       <section class="gallery">
         <img src="${product.images[0]}" alt="Image principale ${product.title}" id="main-img" class="gallery-main" />
@@ -25,7 +26,7 @@ if (!product) {
         </div>
       </section>
       <section class="details">
-        <h1 class="details-title">${product.title}</h1>
+        <h1 class="details-title">🎨${product.title}</h1>
         <p class="details-desc">${product.description}</p>
         <p class="details-price">Prix : ${product.price}</p>
         <a href=${product.link} target="_blank" class="buy-button">
