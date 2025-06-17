@@ -24,7 +24,7 @@ function renderGrid() {
     const div = document.createElement('div');
     div.className = 'pack';
     div.innerHTML = `
-      <img src="${pack.img}" alt="${titreFixe} ${pack.id}" />
+      <img src="${pack.img}" alt="${titreFixe} ${pack.id}" loading="lazy"/>
       <div class="pack-title">${titreFixe}</div>
       <div class="pack-desc">${descriptionFixe}</div>
       <div class="pack-price">Prix : ${prixFixe}</div>

@@ -20,7 +20,7 @@ if (!product) {
           ${product.images
             .map(
               (src, i) =>
-                `<img src="${src}" alt="Image ${i + 1} ${product.title}" class="thumb ${i === 0 ? 'active' : ''}">`
+                `<img src="${src}" alt="Image ${i + 1} ${product.title}" class="thumb ${i === 0 ? 'active' : ''}" loading="lazy">`
             )
             .join('')}
         </div>
