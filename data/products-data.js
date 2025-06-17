@@ -7,9 +7,9 @@ Chaque dessin est prêt à être imprimé et colorié, idéal pour des moments c
 Téléchargez instantanément ce pack après votre achat et laissez la magie des couleurs illuminer la journée de votre enfant !`;
 
 const generateImages = startIndex => [
-  `../images/products/2025/${startIndex}.png`,
-  `../images/products/2025/${startIndex + 1}.png`,
-  `../images/products/2025/${startIndex + 2}.png`
+  `../images/products/2025/${startIndex}.webp`,
+  `../images/products/2025/${startIndex + 1}.webp`,
+  `../images/products/2025/${startIndex + 2}.webp`
 ];
 
 const products = [
