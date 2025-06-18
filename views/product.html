@@ -8,9 +8,16 @@
     <link rel="stylesheet" href="/css/product.css" />
     <link rel="stylesheet" href="/css/includes.css" />
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.2.0/src/lite-yt-embed.css"
+      rel="preload"
+      href="https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.0.4/src/lite-yt-embed.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.0.4/src/lite-yt-embed.css"
+    /></noscript>
   </head>
   <body>
     <div id="header-container"></div>
