@@ -7,6 +7,10 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/includes.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.2.0/src/lite-yt-embed.css"
+    />
   </head>
   <body>
     <div id="header-container"></div>
@@ -21,12 +25,7 @@
           </div>
           <div class="free-coloring-text">
             <div class="video-container">
-              <iframe
-                src="https://www.youtube.com/embed/3SoYv28M58g"
-                title="Présentation du coloriage gratuit"
-                frameborder="0"
-                allowfullscreen
-              ></iframe>
+              <lite-youtube videoid="3SoYv28M58g"></lite-youtube>
             </div>
             <p>Télécharge ce coloriage à imprimer pour t’amuser à la maison !</p>
             <a href="downloads/colorings/2025/free/1.pdf" class="download-button" download>
@@ -102,6 +101,10 @@
       document.addEventListener('contextmenu', e => e.preventDefault());
       document.addEventListener('dragstart', e => e.preventDefault());
     </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.2.0/src/lite-yt-embed.js"
+      defer
+    ></script>
     <script src="js/includes.js"></script>
     <script type="module" src="js/data.js"></script>
     <script type="module" src="js/script.js"></script>

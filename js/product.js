@@ -37,7 +37,7 @@ if (!product) {
           <span>Paiement sécurisé via Stripe</span>
         </div>
         <div class="video-container">
-          <iframe src="${product.video}" title="Présentation ${product.title}" frameborder="0" allowfullscreen></iframe>
+          <lite-youtube videoid="${product.video}"></lite-youtube>
         </div>
       </section>
     </div>
