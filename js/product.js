@@ -37,7 +37,22 @@ if (!product) {
           <span>Paiement sécurisé via Stripe</span>
         </div>
         <div class="video-container">
-          <lite-youtube videoid="${product.video}"></lite-youtube>
+         <a
+            href="https://www.youtube.com/watch?v=${product.video}"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="video-thumbnail"
+            aria-label="Regarder la vidéo sur YouTube"
+          >
+            <img
+              src="https://i.ytimg.com/vi/${product.video}/hqdefault.jpg"
+              alt="Miniature vidéo YouTube"
+              width="350"
+              height="200"
+              loading="lazy"
+            />
+            <span class="play-button"></span>
+          </a>
         </div>
       </section>
     </div>

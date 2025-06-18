@@ -3,21 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Des packs de coloriages magiques à télécharger pour enfants de 3 à 6 ans. Chaque mois, un coloriage gratuit !"
+    />
     <title>Packs Coloriages</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/includes.css" />
-    <link
-      rel="preload"
-      href="https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.0.4/src/lite-yt-embed.css"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
-    />
-    <noscript
-      ><link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.0.4/src/lite-yt-embed.css"
-    /></noscript>
   </head>
   <body>
     <div id="header-container"></div>
@@ -37,7 +30,22 @@
           </div>
           <div class="free-coloring-text">
             <div class="video-container">
-              <lite-youtube videoid="3SoYv28M58g"></lite-youtube>
+              <a
+                href="https://www.youtube.com/watch?v=3SoYv28M58g"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="video-thumbnail"
+                aria-label="Regarder la vidéo sur YouTube"
+              >
+                <img
+                  src="https://i.ytimg.com/vi/3SoYv28M58g/hqdefault.jpg"
+                  alt="Miniature vidéo YouTube"
+                  width="350"
+                  height="200"
+                  loading="lazy"
+                />
+                <span class="play-button"></span>
+              </a>
             </div>
             <p>Télécharge ce coloriage à imprimer pour t’amuser à la maison !</p>
             <a href="downloads/colorings/2025/free/1.pdf" class="download-button" download>
@@ -113,10 +121,6 @@
       document.addEventListener('contextmenu', e => e.preventDefault());
       document.addEventListener('dragstart', e => e.preventDefault());
     </script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.2.0/src/lite-yt-embed.js"
-      defer
-    ></script>
     <script src="js/includes.js"></script>
     <script type="module" src="js/data.js"></script>
     <script type="module" src="js/script.js"></script>
