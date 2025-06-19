@@ -18,7 +18,7 @@ const products = [
     title: 'Lina et le Balai Capricieux',
     description: genericDescription('Lina et le Balai Capricieux'),
     price: prixFixe,
-    video: 'https://www.youtube.com/embed/TWqgkazhCdw',
+    video: 'TWqgkazhCdw',
     images: generateImages(1),
     link: 'https://buy.stripe.com/8x25kE9WWdn02Y4bxP6Vq00',
     active: true
