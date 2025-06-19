@@ -28,7 +28,7 @@ const products = [
     title: 'Gobelet et la Paille Bavarde',
     description: genericDescription('Gobelet et la Paille Bavarde'),
     price: prixFixe,
-    video: 'https://www.youtube.com/embed/TWqgkazhCdw',
+    video: 'TWqgkazhCdw',
     images: generateImages(4),
     link: 'https://buy.stripe.com/9B69AUglk5Uy9msbxP6Vq04',
     active: false
@@ -38,7 +38,7 @@ const products = [
     title: 'Isaac et le Mur Qui Chuchotait',
     description: genericDescription('Isaac et le Mur Qui Chuchotait'),
     price: prixFixe,
-    video: 'https://www.youtube.com/embed/TWqgkazhCdw',
+    video: 'TWqgkazhCdw',
     images: generateImages(7),
     link: 'https://buy.stripe.com/6oU3cw8SS5Uy56c31j6Vq02',
     active: false
@@ -48,7 +48,7 @@ const products = [
     title: 'Le Livre Qui Riait Trop Fort',
     description: genericDescription('Le Livre Qui Riait Trop Fort'),
     price: prixFixe,
-    video: 'https://www.youtube.com/embed/TWqgkazhCdw',
+    video: 'TWqgkazhCdw',
     images: generateImages(10),
     link: 'https://buy.stripe.com/6oU5kE2uu3Mq8iogS96Vq01',
     active: false
@@ -58,7 +58,7 @@ const products = [
     title: 'Zoé et le Banc des Secrets',
     description: genericDescription('Zoé et le Banc des Secrets'),
     price: prixFixe,
-    video: 'https://www.youtube.com/embed/TWqgkazhCdw',
+    video: 'TWqgkazhCdw',
     images: generateImages(13),
     link: 'https://buy.stripe.com/9B6eVe1qq4Qu7ek45n6Vq03',
     active: false
@@ -68,7 +68,7 @@ const products = [
     title: 'La Fleur Qui Ne Voulait Pas Faner',
     description: genericDescription('La Fleur Qui Ne Voulait Pas Faner'),
     price: prixFixe,
-    video: 'https://www.youtube.com/embed/TWqgkazhCdw',
+    video: 'TWqgkazhCdw',
     images: generateImages(16),
     link: '',
     active: false
