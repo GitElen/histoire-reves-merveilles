@@ -31,7 +31,7 @@ const products = [
     video: 'BaBbue0x27Q',
     images: generateImages(4),
     link: 'https://buy.stripe.com/9B69AUglk5Uy9msbxP6Vq04',
-    active: false
+    active: true
   },
   {
     id: 'coloring3',
