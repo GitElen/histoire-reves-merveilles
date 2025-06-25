@@ -38,7 +38,7 @@ const products = [
     title: 'Isaac et le Mur Qui Chuchotait',
     description: genericDescription('Isaac et le Mur Qui Chuchotait'),
     price: prixFixe,
-    video: 'bCyfZSzNtCw',
+    video: 'TBapOF2x4FM',
     images: generateImages(7),
     link: 'https://buy.stripe.com/6oU3cw8SS5Uy56c31j6Vq02',
     active: true
