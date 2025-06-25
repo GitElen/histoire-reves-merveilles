@@ -19,7 +19,6 @@ function renderGrid() {
   const end = start + packsPerPage;
   const reversedPacks = [...homepagePacks].reverse();
   const currentPacks = reversedPacks.slice(start, end);
-  console.log(homepagePacks);
 
   currentPacks.forEach(pack => {
     const div = document.createElement('div');
