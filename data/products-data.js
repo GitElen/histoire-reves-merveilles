@@ -72,6 +72,66 @@ const products = [
     images: generateImages(16),
     link: '',
     active: false
+  },
+  {
+    id: 'coloring7',
+    title: 'L’Écharpe de Lune',
+    description: genericDescription('L’Écharpe de Lune'),
+    price: prixFixe,
+    video: '',
+    images: generateImages(19),
+    link: '',
+    active: false
+  },
+  {
+    id: 'coloring8',
+    title: 'Le Sablier Qui Accélérait Tout',
+    description: genericDescription('Le Sablier Qui Accélérait Tout'),
+    price: prixFixe,
+    video: '',
+    images: generateImages(22),
+    link: '',
+    active: false
+  },
+  {
+    id: 'coloring9',
+    title: 'Kadi et la Fête des Doudous',
+    description: genericDescription('Kadi et la Fête des Doudous'),
+    price: prixFixe,
+    video: '',
+    images: generateImages(25),
+    link: '',
+    active: false
+  },
+  {
+    id: 'coloring10',
+    title: 'Coquinette, la poussinette part en Vacances',
+    description: genericDescription('Coquinette, la poussinette part en Vacances'),
+    price: prixFixe,
+    video: '',
+    images: generateImages(28),
+    link: '',
+    active: false
+  },
+  {
+    id: 'coloring11',
+    title: 'Camping dans la Forêt Enchantée',
+    description: genericDescription('Camping dans la Forêt Enchantée'),
+    price: prixFixe,
+    video: '',
+    images: generateImages(31),
+    link: '',
+    active: false
+  },
+  {
+    id: 'coloring12',
+    title: 'Coquinette, la poussinette qui posait trop de questions',
+    description: genericDescription('Coquinette, la poussinette qui posait trop de questions'),
+    price: prixFixe,
+    video: '3SoYv28M58g',
+    images: generateImages(34),
+    link: 'https://buy.stripe.com/fZubJ21qqer42Y431j6Vq05',
+    active: true
   }
   // Ajoute les autres packs ici
 ];

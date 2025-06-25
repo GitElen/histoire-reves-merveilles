@@ -2,28 +2,25 @@
 import productsData from '/data/products-data.js';
 
 const sharedPackInfo = {
-  titreFixe: 'Pack de 10 coloriages à imprimer',
   descriptionFixe:
-    'Téléchargez ce pack de coloriages et offrez à vos enfants un moment créatif et ludique !',
+    'Téléchargez ce pack de 10 coloriages à imprimer et offrez à vos enfants un moment créatif et ludique !',
   prixFixe: '1,99 €',
   buttonFixe: 'Visualiser le pack'
 };
 
-const products = productsData.filter(p => p.active);
-
-const generateHomepageImages = count => {
-  const result = [];
-  for (let i = 0; i < count; i++) {
-    const imageNumber = i * 3 + 1; // 1, 4, 7, 10, ...
-    result.push({
-      id: `coloring${i + 1}`,
-      img: `/images/products/2025/${imageNumber}.webp`
-    });
-  }
-  return result;
+const generateHomepageImages = activeProducts => {
+  return activeProducts.map(product => {
+    const imageStart = parseInt(product.images[0].match(/\/(\d+)\.webp$/)[1]);
+    return {
+      id: product.id,
+      title: product.title,
+      img: `/images/products/2025/${imageStart}.webp`
+    };
+  });
 };
 
-const homepagePacks = generateHomepageImages(products.length);
+const products = productsData.filter(p => p.active);
+const homepagePacks = generateHomepageImages(products);
 
 const constants = {
   packsPerPage: 3,

@@ -3,7 +3,8 @@ const packs = {
   c5jbl39s: '/downloads/colorings/2025/2.pdf',
   b6q81nzf: '/downloads/colorings/2025/3.pdf',
   p3gjl03x: '/downloads/colorings/2025/4.pdf',
-  a76b12gh: '/downloads/colorings/2025/5.pdf'
+  a76b12gh: '/downloads/colorings/2025/5.pdf',
+  hyg5j6lo: '/downloads/colorings/2025/12.pdf'
 };
 
 window.addEventListener('DOMContentLoaded', () => {
