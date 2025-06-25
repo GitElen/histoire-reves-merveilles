@@ -156,11 +156,7 @@ section {
   font-size: 1.2em;
   margin: 10px 0 6px 0;
   color: #222;
-}
-.pack-title:hover {
-  color: #0a7bdb;
-  text-decoration: underline;
-  cursor: pointer;
+  font-weight: 500;
 }
 .pack-desc {
   flex-grow: 1;

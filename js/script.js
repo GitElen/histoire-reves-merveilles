@@ -5,7 +5,7 @@ import { homepagePacks, sharedPackInfo, constants } from '/js/data.js';
 const pageType = document.body.dataset.page;
 const packsPerPage = pageType === 'coloriages' ? 6 : constants.packsPerPage;
 
-const { titreFixe, descriptionFixe, prixFixe, buttonFixe } = sharedPackInfo;
+const { descriptionFixe, prixFixe, buttonFixe } = sharedPackInfo;
 
 const totalPages = Math.ceil(homepagePacks.length / packsPerPage);
 let currentPage = 1;
@@ -19,13 +19,14 @@ function renderGrid() {
   const end = start + packsPerPage;
   const reversedPacks = [...homepagePacks].reverse();
   const currentPacks = reversedPacks.slice(start, end);
+  console.log(homepagePacks);
 
   currentPacks.forEach(pack => {
     const div = document.createElement('div');
     div.className = 'pack';
     div.innerHTML = `
-      <img src="${pack.img}" alt="${titreFixe} ${pack.id}" loading="lazy"/>
-      <div class="pack-title">${titreFixe}</div>
+      <img src="${pack.img}" alt="${pack.title} ${pack.id}" loading="lazy"/>
+      <div class="pack-title">${pack.title}</div>
       <div class="pack-desc">${descriptionFixe}</div>
       <div class="pack-price">Prix : ${prixFixe}</div>
       <div class="pack-button"><a href="/views/product.html?id=${pack.id}">${buttonFixe}</a></div>
