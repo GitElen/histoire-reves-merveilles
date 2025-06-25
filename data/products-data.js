@@ -41,7 +41,7 @@ const products = [
     video: 'bCyfZSzNtCw',
     images: generateImages(7),
     link: 'https://buy.stripe.com/6oU3cw8SS5Uy56c31j6Vq02',
-    active: false
+    active: true
   },
   {
     id: 'coloring4',

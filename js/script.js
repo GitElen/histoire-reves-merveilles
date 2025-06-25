@@ -3,7 +3,7 @@
 import { homepagePacks, sharedPackInfo, constants } from '/js/data.js';
 
 const pageType = document.body.dataset.page;
-const packsPerPage = pageType === 'coloriages' ? 6 : constants.packsPerPage;
+const packsPerPage = pageType === 'coloriages' ? 12 : constants.packsPerPage;
 
 const { descriptionFixe, prixFixe, buttonFixe } = sharedPackInfo;
 
