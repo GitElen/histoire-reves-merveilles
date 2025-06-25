@@ -23,7 +23,7 @@ const products = productsData.filter(p => p.active);
 const homepagePacks = generateHomepageImages(products);
 
 const constants = {
-  packsPerPage: 3,
+  packsPerPage: 6,
   defaultProductId: 'coloring1'
 };
 
