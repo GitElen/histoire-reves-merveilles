@@ -48,7 +48,7 @@ const products = [
     title: 'Le Livre Qui Riait Trop Fort',
     description: genericDescription('Le Livre Qui Riait Trop Fort'),
     price: prixFixe,
-    video: 'xmrd7s3iOWw',
+    video: '',
     images: generateImages(10),
     link: 'https://buy.stripe.com/6oU5kE2uu3Mq8iogS96Vq01',
     active: false
@@ -110,7 +110,7 @@ const products = [
     price: prixFixe,
     video: '',
     images: generateImages(28),
-    link: '',
+    link: 'https://buy.stripe.com/fZu00k8SS1Eiaqw7hz6Vq06',
     active: false
   },
   {
