@@ -108,10 +108,10 @@ const products = [
     title: 'Coquinette, la poussinette part en Vacances',
     description: genericDescription('Coquinette, la poussinette part en Vacances'),
     price: prixFixe,
-    video: '',
+    video: 'FVaboX8Gqtk',
     images: generateImages(28),
     link: 'https://buy.stripe.com/fZu00k8SS1Eiaqw7hz6Vq06',
-    active: false
+    active: true
   },
   {
     id: 'coloring11',
