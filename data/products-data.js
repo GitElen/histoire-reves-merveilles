@@ -58,10 +58,10 @@ const products = [
     title: 'Zoé et le Banc des Secrets',
     description: genericDescription('Zoé et le Banc des Secrets'),
     price: prixFixe,
-    video: '',
+    video: 'SISxjRf156g',
     images: generateImages(13),
     link: 'https://buy.stripe.com/9B6eVe1qq4Qu7ek45n6Vq03',
-    active: false
+    active: true
   },
   {
     id: 'coloring6',
