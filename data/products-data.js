@@ -80,7 +80,7 @@ const products = [
     price: prixFixe,
     video: '',
     images: generateImages(19),
-    link: '',
+    link: 'https://buy.stripe.com/fZubJ23yygzcdCIcBT6Vq07',
     active: false
   },
   {

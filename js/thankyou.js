@@ -5,7 +5,8 @@ const packs = {
   p3gjl03x: '/downloads/colorings/2025/4.pdf',
   a76b12gh: '/downloads/colorings/2025/5.pdf',
   hyg5j6lo: '/downloads/colorings/2025/12.pdf',
-  qd4gu67h: '/downloads/colorings/2025/10.pdf'
+  qd4gu67h: '/downloads/colorings/2025/10.pdf',
+  ddgk5l67: '/downloads/colorings/2025/7.pdf'
 };
 
 window.addEventListener('DOMContentLoaded', () => {
