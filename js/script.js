@@ -74,4 +74,4 @@ function goToPage(page) {
 }
 
 renderGrid();
-//renderPagination();
+renderPagination();
