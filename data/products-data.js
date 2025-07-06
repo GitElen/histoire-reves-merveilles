@@ -78,10 +78,10 @@ const products = [
     title: 'L’Écharpe de Lune',
     description: genericDescription('L’Écharpe de Lune'),
     price: prixFixe,
-    video: '',
+    video: 'YS0Ce1aXh-g',
     images: generateImages(19),
     link: 'https://buy.stripe.com/fZubJ23yygzcdCIcBT6Vq07',
-    active: false
+    active: true
   },
   {
     id: 'coloring8',
