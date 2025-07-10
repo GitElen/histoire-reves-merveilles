@@ -70,7 +70,7 @@ const products = [
     price: prixFixe,
     video: '',
     images: generateImages(16),
-    link: '',
+    link: 'https://buy.stripe.com/9B6bJ28SSer49ms59r6Vq09',
     active: false
   },
   {
@@ -100,7 +100,7 @@ const products = [
     price: prixFixe,
     video: '',
     images: generateImages(25),
-    link: '',
+    link: 'https://buy.stripe.com/28EdRac54aaOeGM7hz6Vq08',
     active: false
   },
   {
@@ -132,6 +132,26 @@ const products = [
     images: generateImages(34),
     link: 'https://buy.stripe.com/fZubJ21qqer42Y431j6Vq05',
     active: true
+  },
+  {
+    id: 'coloring13',
+    title: 'Craby, le crabe qui n’aimait pas l’eau',
+    description: genericDescription('Craby, le crabe qui n’aimait pas l’eau'),
+    price: prixFixe,
+    video: '',
+    images: generateImages(37),
+    link: '',
+    active: false
+  },
+  {
+    id: 'coloring14',
+    title: 'Le Grand Pique-nique de l’Été',
+    description: genericDescription('Le Grand Pique-nique de l’Été'),
+    price: prixFixe,
+    video: '',
+    images: generateImages(40),
+    link: '',
+    active: false
   }
   // Ajoute les autres packs ici
 ];
