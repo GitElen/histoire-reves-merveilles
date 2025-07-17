@@ -152,6 +152,26 @@ const products = [
     images: generateImages(40),
     link: 'https://buy.stripe.com/4gMbJ2glkgzc56cdFX6Vq0d',
     active: false
+  },
+  {
+    id: 'coloring15',
+    title: 'Rose veut rester en vacances',
+    description: genericDescription('Rose veut rester en vacances'),
+    price: prixFixe,
+    video: '',
+    images: generateImages(43),
+    link: 'https://buy.stripe.com/8x28wQ2uu6YCgOU7hz6Vq0e',
+    active: false
+  },
+  {
+    id: 'coloring16',
+    title: 'La Rentrée de Coquinette la Poussinette',
+    description: genericDescription('La Rentrée de Coquinette la Poussinette'),
+    price: prixFixe,
+    video: '',
+    images: generateImages(46),
+    link: 'https://buy.stripe.com/eVq6oI6KK5UydCI31j6Vq0f',
+    active: false
   }
   // Ajoute les autres packs ici
 ];
