@@ -98,10 +98,10 @@ const products = [
     title: 'Kadi et la Fête des Doudous',
     description: genericDescription('Kadi et la Fête des Doudous'),
     price: prixFixe,
-    video: '',
+    video: 'VX3y10qp380',
     images: generateImages(25),
     link: 'https://buy.stripe.com/28EdRac54aaOeGM7hz6Vq08',
-    active: false
+    active: true
   },
   {
     id: 'coloring10',
