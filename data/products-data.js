@@ -172,6 +172,16 @@ const products = [
     images: generateImages(46),
     link: 'https://buy.stripe.com/eVq6oI6KK5UydCI31j6Vq0f',
     active: false
+  },
+  {
+    id: 'coloring17',
+    title: 'Thomas et les Crayons',
+    description: genericDescription('Thomas et les Crayons'),
+    price: prixFixe,
+    video: '',
+    images: generateImages(49),
+    link: 'https://buy.stripe.com/8x200kc542Im1U00Tb6Vq0g',
+    active: false
   }
   // Ajoute les autres packs ici
 ];
