@@ -182,6 +182,16 @@ const products = [
     images: generateImages(49),
     link: 'https://buy.stripe.com/8x200kc542Im1U00Tb6Vq0g',
     active: false
+  },
+  {
+    id: 'coloring18',
+    title: 'Le Cahier Qui Avalait les Bêtises',
+    description: genericDescription('Le Cahier Qui Avalait les Bêtises'),
+    price: prixFixe,
+    video: '',
+    images: generateImages(52),
+    link: 'https://buy.stripe.com/7sYdRa3yy2ImdCIfO56Vq0h',
+    active: false
   }
   // Ajoute les autres packs ici
 ];
