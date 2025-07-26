@@ -68,10 +68,10 @@ const products = [
     title: 'La Fleur Qui Ne Voulait Pas Faner',
     description: genericDescription('La Fleur Qui Ne Voulait Pas Faner'),
     price: prixFixe,
-    video: '',
+    video: '4BWdwClKdkQ',
     images: generateImages(16),
     link: 'https://buy.stripe.com/9B6bJ28SSer49ms59r6Vq09',
-    active: false
+    active: true
   },
   {
     id: 'coloring7',
