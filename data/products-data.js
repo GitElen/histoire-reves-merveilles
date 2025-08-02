@@ -118,10 +118,10 @@ const products = [
     title: 'Camping dans la Forêt Enchantée',
     description: genericDescription('Camping dans la Forêt Enchantée'),
     price: prixFixe,
-    video: '',
+    video: 'MN2BNa_c-nE',
     images: generateImages(31),
     link: 'https://buy.stripe.com/14AcN65GG5Uy7ekgS96Vq0a',
-    active: false
+    active: true
   },
   {
     id: 'coloring12',
