@@ -202,6 +202,16 @@ const products = [
     images: generateImages(55),
     link: 'https://buy.stripe.com/7sYeVe4CC4Qu1U01Xf6Vq0i',
     active: false
+  },
+  {
+    id: 'coloring20',
+    title: 'Hector l’Escargot à Rayures',
+    description: genericDescription('Hector l’Escargot à Rayures'),
+    price: prixFixe,
+    video: '',
+    images: generateImages(58),
+    link: 'https://buy.stripe.com/bJe28s9WW6YCeGM6dv6Vq0j',
+    active: false
   }
   // Ajoute les autres packs ici
 ];
