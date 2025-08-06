@@ -212,6 +212,16 @@ const products = [
     images: generateImages(58),
     link: 'https://buy.stripe.com/bJe28s9WW6YCeGM6dv6Vq0j',
     active: false
+  },
+  {
+    id: 'coloring21',
+    title: 'Nina et le Lit Trop Grand',
+    description: genericDescription('Nina et le Lit Trop Grand'),
+    price: prixFixe,
+    video: '',
+    images: generateImages(61),
+    link: '',
+    active: false
   }
   // Ajoute les autres packs ici
 ];

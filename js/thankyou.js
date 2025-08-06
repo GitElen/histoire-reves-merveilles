@@ -18,7 +18,8 @@ const packs = {
   g5dd68tg: '/downloads/colorings/2025/17.pdf',
   a45de8r4: '/downloads/colorings/2025/18.pdf',
   nagf54de: '/downloads/colorings/2025/19.pdf',
-  egfg54ff: '/downloads/colorings/2025/20.pdf'
+  egfg54ff: '/downloads/colorings/2025/20.pdf',
+  f54h8yu8: '/downloads/colorings/2025/21.pdf'
 };
 
 window.addEventListener('DOMContentLoaded', () => {
