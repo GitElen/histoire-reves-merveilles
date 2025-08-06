@@ -220,7 +220,7 @@ const products = [
     price: prixFixe,
     video: '',
     images: generateImages(61),
-    link: '',
+    link: 'https://buy.stripe.com/14A4gAedc1EigOUatL6Vq0k',
     active: false
   }
   // Ajoute les autres packs ici
