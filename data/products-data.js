@@ -88,10 +88,10 @@ const products = [
     title: 'Le Sablier Qui Accélérait Tout',
     description: genericDescription('Le Sablier Qui Accélérait Tout'),
     price: prixFixe,
-    video: '',
+    video: 'XzOUk1373hg',
     images: generateImages(22),
     link: 'https://buy.stripe.com/eVqbJ2glk1Ei9msgS96Vq0b',
-    active: false
+    active: true
   },
   {
     id: 'coloring9',
