@@ -148,10 +148,10 @@ const products = [
     title: 'Le Grand Pique-nique de l’Été',
     description: genericDescription('Le Grand Pique-nique de l’Été'),
     price: prixFixe,
-    video: '',
+    video: '-1hgNqLPxT8',
     images: generateImages(40),
     link: 'https://buy.stripe.com/4gMbJ2glkgzc56cdFX6Vq0d',
-    active: false
+    active: true
   },
   {
     id: 'coloring15',
