@@ -138,10 +138,10 @@ const products = [
     title: 'Craby, le crabe qui n’aimait pas l’eau',
     description: genericDescription('Craby, le crabe qui n’aimait pas l’eau'),
     price: prixFixe,
-    video: '',
+    video: 'oib32NAPE-Q',
     images: generateImages(37),
     link: 'https://buy.stripe.com/fZu3cw0mm1Ei9mseK16Vq0c',
-    active: false
+    active: true
   },
   {
     id: 'coloring14',
