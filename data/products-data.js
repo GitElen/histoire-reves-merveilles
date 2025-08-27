@@ -158,10 +158,10 @@ const products = [
     title: 'Rose veut rester en vacances',
     description: genericDescription('Rose veut rester en vacances'),
     price: prixFixe,
-    video: '',
+    video: 'otDO-A71Sxo',
     images: generateImages(43),
     link: 'https://buy.stripe.com/8x28wQ2uu6YCgOU7hz6Vq0e',
-    active: false
+    active: true
   },
   {
     id: 'coloring16',
