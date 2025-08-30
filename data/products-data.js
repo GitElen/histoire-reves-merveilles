@@ -168,10 +168,10 @@ const products = [
     title: 'La Rentrée de Coquinette la Poussinette',
     description: genericDescription('La Rentrée de Coquinette la Poussinette'),
     price: prixFixe,
-    video: '',
+    video: 'qHpnwYqWKDI',
     images: generateImages(46),
     link: 'https://buy.stripe.com/eVq6oI6KK5UydCI31j6Vq0f',
-    active: false
+    active: true
   },
   {
     id: 'coloring17',
