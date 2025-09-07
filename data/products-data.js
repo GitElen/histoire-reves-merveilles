@@ -188,10 +188,10 @@ const products = [
     title: 'Le Cahier Qui Avalait les Bêtises',
     description: genericDescription('Le Cahier Qui Avalait les Bêtises'),
     price: prixFixe,
-    video: '',
+    video: 'ww0KBUK4wXc',
     images: generateImages(52),
     link: 'https://buy.stripe.com/7sYdRa3yy2ImdCIfO56Vq0h',
-    active: false
+    active: true
   },
   {
     id: 'coloring19',
