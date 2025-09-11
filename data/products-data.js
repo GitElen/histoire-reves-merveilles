@@ -198,10 +198,10 @@ const products = [
     title: 'Yanis et le Parapluie Ronchon',
     description: genericDescription('Yanis et le Parapluie Ronchon'),
     price: prixFixe,
-    video: '',
+    video: 'sD-azFPeLnk',
     images: generateImages(55),
     link: 'https://buy.stripe.com/7sYeVe4CC4Qu1U01Xf6Vq0i',
-    active: false
+    active: true
   },
   {
     id: 'coloring20',
