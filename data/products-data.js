@@ -208,20 +208,20 @@ const products = [
     title: 'Hector l’Escargot à Rayures',
     description: genericDescription('Hector l’Escargot à Rayures'),
     price: prixFixe,
-    video: '',
+    video: '6UOaPNQVNic',
     images: generateImages(58),
     link: 'https://buy.stripe.com/bJe28s9WW6YCeGM6dv6Vq0j',
-    active: false
+    active: true
   },
   {
     id: 'coloring21',
     title: 'Nina et le Lit Trop Grand',
     description: genericDescription('Nina et le Lit Trop Grand'),
     price: prixFixe,
-    video: '',
+    video: 'L7NxXFq6kSU',
     images: generateImages(61),
     link: 'https://buy.stripe.com/14A4gAedc1EigOUatL6Vq0k',
-    active: false
+    active: true
   }
   // Ajoute les autres packs ici
 ];
